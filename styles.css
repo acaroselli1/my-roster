@@ -1,0 +1,23 @@
+.card{
+display: inline-block;
+border:1px solid black;
+
+}
+
+.add-player{
+    margin-top:5vh;
+}
+
+.well{
+    margin-right:5vw;
+    margin-left:5vw;
+}
+
+h5{
+    margin-left:6vw;
+    font-weight:bold;
+}
+
+.last{
+    height:10vh;
+}
