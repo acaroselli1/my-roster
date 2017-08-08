@@ -2,7 +2,7 @@
 
 var PlayersService = function(endpointUri, callback){
     var playersData = [];
-    var myRoster = JSON.parse(localStorage.getItem('myRoster')) || []
+    var myRoster = JSON.parse(localStorage.getItem('myRoster'))|| []
 
     function saveRoster(){
         localStorage.setItem('myRoster', JSON.stringify(myRoster))
@@ -41,7 +41,8 @@ var PlayersService = function(endpointUri, callback){
     for (var i=0;i<playersData.length;i++){
        var player = playersData[i];
       if (player.id==id){
-         if (myRoster.indexOf(player) ==-1){
+        console.log(myRoster)
+        if (myRoster.indexOf(player) ==-1 && myRoster.length < 54){
          myRoster.push(player)
          saveRoster()
          }
@@ -57,6 +58,7 @@ var PlayersService = function(endpointUri, callback){
          if (myRoster.indexOf(player)!=-1){
           var index = myRoster.indexOf(myRoster);
          myRoster.splice(index,1);
+         saveRoster()
          }
        }
     }
