@@ -1,6 +1,8 @@
 .card{
-display: inline-block;
+/*display: inline-block;*/
 border:1px solid black;
+margin-top:1vh;
+margin-bottom:1vh;
 
 }
 
@@ -20,4 +22,43 @@ h5{
 
 .last{
     height:10vh;
+}
+
+.card-img-top{
+    margin-top:0vh;
+}
+
+.card-block{
+    margin-top:3vh;
+}
+
+.fullname{
+    font-weight:bold;
+}
+
+.select{
+    color:white;
+    width:50%;
+
+}
+
+.form-group{
+   margin-left:20vw;
+}
+
+.panel-heading{
+    font-size:3rem;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+}
+
+#add{
+background-color:royalblue;
+}
+
+#remove{
+background-color:maroon;
 }

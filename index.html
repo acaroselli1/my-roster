@@ -14,10 +14,12 @@
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading">My NFL Roster</div>
+            <div class="row" id="my-team-output">
+            </div>
             <div class="panel-body">
                 <div class="player-roster">
                     <div class="panel panel-primary add-player">
-                        <div class="panel-heading"><span class="glyphicon glyphicon-plus-sign"></span><span>  Add Player</span></div>
+                        <div class="panel-heading">NFL Player(s)</div>
                         <div class="row">
                             <div class="col-xs-12">
                                 <form class="form-inline" onsubmit="app.controllers.playersController.getPlayersByTeam(event)">
@@ -42,20 +44,21 @@
                             <div class="col-xs-12">
                                 <form class="form-inline" onsubmit="app.controllers.playersController.getPlayersByName(event)">
                                     <div class="form-group form-group-lg">
-                                        <input type="text" class="form-control input-lg" name="playersByName" placeholder="Player Full Name" />
-                                        <button type="submit" class="btn btn-primary btn-lg"> Get Player(s) By Name</button>
+                                        <input type="text" class="form-control input-lg" name="playersByName" placeholder="Fullname" />
+                                        <button type="submit" class="btn btn-primary btn-lg"> Get Players By Name</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                       <div class="row" id ="player-output">
-                       </div>
-                        <button type="button" class="btn btn-outline-secondary"><span class="glyphicon glyphicon-plus-sign"></span>  Add To Team</button>
+                        <div class="row" id="player-output">
+                            <div class="col-xs-12">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
