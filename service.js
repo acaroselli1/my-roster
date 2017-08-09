@@ -56,7 +56,7 @@ var PlayersService = function(endpointUri, callback){
        var player = playersData[i];
       if (player.id==id){
          if (myRoster.indexOf(player)!=-1){
-          var index = myRoster.indexOf(myRoster);
+          var index = myRoster.indexOf(player);
          myRoster.splice(index,1);
          saveRoster()
          }
