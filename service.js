@@ -37,12 +37,12 @@ var PlayersService = function(endpointUri, callback){
     }
     
     
-   this.addPlayer = function(id,cb){
+   this.addPlayer = function(id, cb){
     for (var i=0;i<playersData.length;i++){
        var player = playersData[i];
       if (player.id==id){
         console.log(myRoster)
-        if (myRoster.indexOf(player) ==-1 && myRoster.length < 54){
+        if ((myRoster.indexOf(player)) ==-1 && (myRoster.length < 11)){
          myRoster.push(player)
          saveRoster()
          }
