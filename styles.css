@@ -1,6 +1,6 @@
 .card{
 /*display: inline-block;*/
-border:1px solid black;
+border:2px solid black;
 margin-top:1vh;
 margin-bottom:1vh;
 
@@ -29,7 +29,8 @@ h5{
 }
 
 .card-block{
-    margin-top:3vh;
+    color:white;
+    padding-top:2vh;
 }
 
 .fullname{
@@ -61,4 +62,29 @@ background-color:royalblue;
 
 #remove{
 background-color:maroon;
+}
+
+.black{
+    background-color:black;
+}
+
+.darkgreen{
+  background-color:darkgreen;
+}
+
+.row{
+    margin-left:2vw;
+}
+
+.card-img-top{
+    background-color:white;
+}
+
+.brown{
+    background-color:#654321;
+    margin-top:5vh;
+}
+
+.black{
+    background-color:black;
 }

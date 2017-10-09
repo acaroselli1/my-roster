@@ -120,8 +120,12 @@ function CarService() {
           localStorage.setItem('playersData', JSON.stringify(playersData))
           console.log('Finished Writing Player Data to localStorage')
           console.log(playersData);
+          
           callback(playersData)
         });
-    }	
+     
+    }
+    
+    console.log(callback)
 loadPlayersData(); //call the function above every time we create a new service
 }
