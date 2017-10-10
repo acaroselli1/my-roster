@@ -1,3 +1,5 @@
+@font-face {font-family:"NFL";src:url("62f21f04317a4fcf65fd6177f6bda3a3.eot?") format("eot"),url("62f21f04317a4fcf65fd6177f6bda3a3.woff") format("woff"),url("62f21f04317a4fcf65fd6177f6bda3a3.ttf") format("truetype"),url("62f21f04317a4fcf65fd6177f6bda3a3.svg#NFL") format("svg");font-weight:normal;font-style:normal;}
+
 .card{
 /*display: inline-block;*/
 border:2px solid black;
@@ -87,4 +89,39 @@ background-color:maroon;
 
 .black{
     background-color:black;
+}
+
+.title{
+    color:white;
+    text-align:center;
+    font-size:6rem;
+    margin-top:10vh;
+    margin-bottom:10vh;
+}
+
+.football{
+    display:flex;
+    justify-content:center;
+    margin-top:5vh;
+}
+
+body{
+    font-family:"NFL";
+}
+
+.goalpost{
+    text-align:center;
+    margin-left:1vw;
+    margin-top:-15vh;
+}
+.football{
+    display:flex;
+    justify-content:center;
+    margin-top:5vh;
+}
+
+.goalpost{
+    text-align:center;
+    margin-left:1vw;
+    margin-top:-15vh;
 }

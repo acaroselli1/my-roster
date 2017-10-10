@@ -98,7 +98,7 @@ function PlayersController() {
                        <p class="card-text text-center">${player.pro_team}</p>
                        <p class="card-text text-center">${player.position}</p>
                     <div class="buttons"> 
-                        <button class ="select" id = "remove"onclick="app.controllers.playersController.removePlayer(${player.id})"><span class="glyphicon glyphicon-minus-sign"></span> Remove From Team</button>
+                        <button class ="select" id = "remove" onclick="app.controllers.playersController.removePlayer(${player.id})"><span class="glyphicon glyphicon-minus-sign"></span> Remove From Team</button>
                       </div>
                    
                     </div>
